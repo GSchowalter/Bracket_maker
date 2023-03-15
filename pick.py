@@ -11,11 +11,11 @@ from random import random
 
 def main(args):
     print(args)
-    underdog = int(args.underdog)
-    favorite = int(args.favorite)
+    underdog = int(args["underdog"])
+    favorite = int(args["favorite"])
 
-    underdog_val = underdog * random()
-    favorite_val = favorite * random()
+    underdog_val = (underdog + 5) * random()
+    favorite_val = (favorite + 5) * random()
 
     print(underdog_val)
     print(favorite_val)
